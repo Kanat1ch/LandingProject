@@ -1,0 +1,113 @@
+@media screen and (max-width: 1025px) {
+    .header {
+        &__title {
+            margin-top: 25vh;
+            font-size: 24px;
+        }
+    }
+
+    .services {
+        &__list {
+            .srv-item {
+                width: 28% !important;
+            }
+        }
+    }
+
+    .team {
+        &__items {
+            .team-item {
+                width: 50%;
+            }
+
+            .team-item:nth-child(4n+2) {
+                border-right: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .header {
+        &__title {
+            width: 100%;
+            font-size: 30px;
+            border-right: none;
+            border-left:none;
+        }
+
+        &__bottom {
+            padding: 0 5%;
+        }
+    }
+
+    .services {
+        padding: 0 5% 30px;
+
+        &__list {
+            .srv-item {
+                width: 100% !important;
+                margin-bottom: 70px;
+
+                .srv-title {
+                    margin: 10px 0;
+                }
+
+                .srv-description {
+                    width: 80%;
+                    font-size: 16px;
+                }
+
+                .srv-btn {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 13px;
+                    border-left: 1px solid #f7ac53;
+                    background: linear-gradient(135deg, #2b2b2b 38%, transparent 0%);
+                }
+            }
+        }
+    }
+
+    .team {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .header {
+        &__title {
+            margin-top: 20vh;
+        }
+    }
+
+    .services {
+        &__list {
+            .srv-item {
+                .srv-description {
+                    width: 100%;
+                }
+
+                .srv-btn {
+                    background: linear-gradient(135deg, #2b2b2b 50%, transparent 0%);
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+
+    .team {
+        padding: 0 15%;
+
+        &__items {
+            .team-item {
+                width: 100%;
+                border-right: none !important;
+                padding: 100px 0;
+            }
+        }
+    }
+}
